@@ -1,10 +1,75 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>osceng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: clamp(16px, 2.5vw, 18px); /* Ensures readable font size */
+        }
+
+        a {
+            color: #333;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #555;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+
+            p {
+                font-size: clamp(14px, 2vw, 16px);
+            }
+        }
+
+        @media (max-width: 400px) {
+            p {
+                font-size: clamp(12px, 1.8vw, 14px);
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>osceng</p>
-    <p>design</p>
+    <div class="container">
+        <p>osceng</p>
+        <p>UAE based design and engineering.</p>
+        <p>All projects considered: <a href="mailto:ideas@osceng.com">ideas@osceng.com</a></p>
+        <p>Portfolio: <a href="mailto:portfolio@osceng.com">portfolio@osceng.com</a></p>
+    </div>
 </body>
 </html>
